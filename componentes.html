@@ -1,0 +1,70 @@
+
+    <title>Componentes - Simulador de PC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PCBuilderPro</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="componentes.html" class="active">Componentes</a></li>
+                <li><a href="ensamblaje.html">Ensamblador</a></li>
+                <li><a href="compatibilidad.html">Compatibilidad</a></li>
+                <li><a href="introduccion.html">Guía</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="components-main">
+        <section class="component-filter">
+            <h1>Catálogo de Componentes</h1>
+            
+            <div class="filter-options">
+                <div class="filter-group">
+                    <label for="category">Categoría:</label>
+                    <select id="category">
+                        <option value="all">Todos</option>
+                        <option value="CPU">Procesadores</option>
+                        <option value="GPU">Tarjetas Gráficas</option>
+                        <option value="RAM">Memoria RAM</option>
+                        <option value="Motherboard">Placas Madre</option>
+                        <option value="PSU">Fuentes de Poder</option>
+                        <option value="Storage">Almacenamiento</option>
+                        <option value="Case">Gabinetes</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-range">Rango de Precio:</label>
+                    <input type="range" id="price-range" min="0" max="2000" value="2000">
+                    <span id="price-value">$0 - $2000</span>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="manufacturer">Fabricante:</label>
+                    <select id="manufacturer">
+                        <option value="all">Todos</option>
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                        <option value="NVIDIA">NVIDIA</option>
+                        <option value="ASUS">ASUS</option>
+                    </select>
+                </div>
+                
+                <button id="apply-filters" class="btn-primary">Aplicar Filtros</button>
+            </div>
+        </section>
+
+        <section class="component-grid">
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Cargando componentes...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="components.js"></script>
+</body>
+</html>
