@@ -1,0 +1,196 @@
+
+    <title>Guía de Ensamblaje - PCBuilderPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="guide-header">
+        <nav>
+            <div class="logo"><i class="fas fa-laptop-code"></i> PCBuilderPro</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="ensamblaje.html">Ensamblador</a></li>
+                <li><a href="compatibilidad.html">Compatibilidad</a></li>
+                <li><a href="guia.html" class="active">Guía</a></li>
+            </ul>
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </nav>
+        
+        <div class="header-content">
+            <h1>Guía Completa de Ensamblaje</h1>
+            <p>Aprende a construir tu PC paso a paso con instrucciones detalladas y soporte visual</p>
+        </div>
+    </header>
+
+    <main class="guide-container">
+        <aside class="guide-sidebar">
+            <div class="sidebar-search">
+                <input type="text" placeholder="Buscar en la guía...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li class="menu-category active" data-category="preparacion">
+                    <span><i class="fas fa-tools"></i> Preparación</span>
+                    <ul>
+                        <li class="active" data-section="herramientas">Herramientas Necesarias</li>
+                        <li data-section="espacio">Preparación del Espacio</li>
+                        <li data-section="seguridad">Precauciones de Seguridad</li>
+                    </ul>
+                </li>
+                <li class="menu-category" data-category="ensamblaje">
+                    <span><i class="fas fa-microchip"></i> Proceso de Ensamblaje</span>
+                    <ul>
+                        <li data-section="cpu">Instalación del CPU</li>
+                        <li data-section="ram">Instalación de la RAM</li>
+                        <li data-section="motherboard">Montaje de la Placa Madre</li>
+                        <li data-section="gpu">Instalación de la GPU</li>
+                        <li data-section="almacenamiento">Instalación de Almacenamiento</li>
+                        <li data-section="psu">Instalación de la Fuente de Poder</li>
+                        <li data-section="cableado">Gestión de Cableado</li>
+                    </ul>
+                </li>
+                <li class="menu-category" data-category="postensamblaje">
+                    <span><i class="fas fa-check-circle"></i> Post-Ensamblaje</span>
+                    <ul>
+                        <li data-section="pruebas">Pruebas Iniciales</li>
+                        <li data-section="bios">Configuración del BIOS</li>
+                        <li data-section="sistema">Instalación del Sistema Operativo</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <div class="sidebar-difficulty">
+                <h3>Nivel de Dificultad:</h3>
+                <select id="difficulty-select">
+                    <option value="beginner">Principiante</option>
+                    <option value="intermediate">Intermedio</option>
+                    <option value="advanced">Avanzado</option>
+                </select>
+            </div>
+        </aside>
+
+        <section class="guide-content">
+            <div class="content-header">
+                <h2 id="section-title">Herramientas Necesarias</h2>
+                <div class="breadcrumbs">
+                    <span>Guía</span> > <span>Preparación</span> > <span class="current">Herramientas Necesarias</span>
+                </div>
+            </div>
+            
+            <div class="content-body">
+                <div class="guide-step active" id="herramientas">
+                    <div class="step-header">
+                        <span class="step-number">1</span>
+                        <h3>Herramientas Básicas para el Ensamblaje</h3>
+                    </div>
+                    
+                    <div class="step-content">
+                        <div class="step-text">
+                            <p>Para ensamblar tu PC necesitarás las siguientes herramientas básicas:</p>
+                            <ul class="tool-list">
+                                <li>
+                                    <i class="fas fa-screwdriver"></i>
+                                    <strong>Destornillador magnético:</strong> Preferiblemente de cabeza Phillips #2
+                                </li>
+                                <li>
+                                    <i class="fas fa-hand-paper"></i>
+                                    <strong>Pulsera antiestática:</strong> Para prevenir daños por electricidad estática
+                                </li>
+                                <li>
+                                    <i class="fas fa-cut"></i>
+                                    <strong>Alicates o pinzas:</strong> Para colocar tornillos en espacios reducidos
+                                </li>
+                                <li>
+                                    <i class="fas fa-lightbulb"></i>
+                                    <strong>Linterna o luz auxiliar:</strong> Para ver mejor en el interior del gabinete
+                                </li>
+                            </ul>
+                            
+                            <div class="step-tip">
+                                <i class="fas fa-info-circle"></i>
+                                <p>Organiza todas tus herramientas antes de comenzar para tenerlas a mano cuando las necesites.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-media">
+                            <img src="imagen" alt="Herramientas para ensamblar PC" class="step-image">
+                            <div class="media-caption">Kit básico de herramientas para ensamblaje</div>
+                        </div>
+                    </div>
+                    
+                    <div class="step-footer">
+                        <div class="step-difficulty">
+                            <span class="difficulty-label">Dificultad:</span>
+                            <span class="difficulty-badge beginner">Principiante</span>
+                        </div>
+                        <div class="step-time">
+                            <i class="far fa-clock"></i>
+                            <span>Tiempo estimado: 5 minutos (preparación)</span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="content-navigation">
+                <button class="nav-btn prev-btn" disabled>
+                    <i class="fas fa-arrow-left"></i> Anterior
+                </button>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: 10%"></div>
+                    <span class="progress-text">1 de 10 pasos</span>
+                </div>
+                <button class="nav-btn next-btn">
+                    Siguiente <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+        
+            
+            <div class="extra-section">
+                <h3><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h3>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Es absolutamente necesaria la pulsera antiestática?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aunque no es estrictamente obligatoria, se recomienda encarecidamente para proteger componentes sensibles como el CPU y la RAM de descargas electrostáticas.</p>
+                    </div>
+                </div>
+            </div>           
+        </aside>
+    </main>
+    <footer class="guide-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PCBuilderPro</h4>
+                <p>Tu guía completa para construir la PC perfecta</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contáctanos</h4>
+                <p>soporte@pcbuilderpro.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico">
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PCBuilderPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="guide.js"></script>
+</body>
+</html>
