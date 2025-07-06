@@ -1,0 +1,98 @@
+
+    <title>Ensamblador Virtual - Simulador de PC</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .builder-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding: 2rem;
+        }
+        
+        .component-list {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .pc-preview {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .pc-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">PCBuilderPro</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="componentes.html">Componentes</a></li>
+                <li><a href="ensamblaje.html" class="active">Ensamblador</a></li>
+                <li><a href="compatibilidad.html">Compatibilidad</a></li>
+                <li><a href="introduccion.html">Guía</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="builder-container">
+        <section class="component-list">
+            <h2>Selecciona tus Componentes</h2>
+            
+            <div class="builder-steps">
+                <div class="step active" data-step="1">
+                    <h3>1. Procesador (CPU)</h3>
+                    <div class="step-content"></div>
+                </div>
+                
+                <div class="step" data-step="2">
+                    <h3>2. Placa Madre</h3>
+                    <div class="step-content"></div>
+                </div>
+                
+            </div>
+            
+            <div class="navigation-buttons">
+                <button class="btn-secondary" id="prev-step" disabled>Anterior</button>
+                <button class="btn-primary" id="next-step">Siguiente</button>
+            </div>
+        </section>
+
+        <section class="pc-preview">
+            <h2>Vista Previa</h2>
+            <img src="images/pc-case.png" alt="Gabinete de PC" class="pc-image">
+            
+            <div class="pc-specs">
+                <h3>Especificaciones</h3>
+                <ul id="specs-list">
+                    <li>Selecciona componentes para comenzar</li>
+                </ul>
+            </div>
+            
+            <div class="compatibility-check">
+                <h3>Compatibilidad</h3>
+                <div id="compatibility-result" class="result">
+                    <i class="fas fa-info-circle"></i>
+                    <p>Selecciona al menos dos componentes para verificar compatibilidad</p>
+                </div>
+            </div>
+            
+            <button class="btn-primary" id="save-build" disabled>Guardar Configuración</button>
+        </section>
+    </main>
+
+    <script src="builder.js"></script>
+</body>
+</html>
