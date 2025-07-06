@@ -82,3 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     init();
 });
+import { fetchComponents } from './api.js';
+
+document.addEventListener('DOMContentLoaded', async function() {
+    const components = await fetchComponents();
+    renderComponents(components);});
